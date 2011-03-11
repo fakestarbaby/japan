@@ -93,11 +93,18 @@
   </head>
   <body>
     <style>
-      img.bgmaximage {position:fixed !important;}
+	textarea {
+	  color: white;
+	  background: transparent;
+	  border: 0;
+	  outline: thin dotted blue;
+	}
+	img.bgmaximage {position:fixed !important;}
     </style>
-	<div class="exec_js" id="test_which"> 
-      <input type="text" size="279" />
-	</div> 
+	<div class="exec_js" id="test_which">
+      <!-- <input type="text" size="279" /> -->
+  　　　　<textarea id="test_which" rows="55" cols="200"></textarea>
+	</div>
 	<script type="text/javascript">
 	$(function(){
 	    $("#test_which").bind("keydown", function(event) {
