@@ -18,9 +18,76 @@
         if(jQuery.support.checkOn && jQuery.support.noCloneEvent){
           $("*").css("cursor", "none");
         };
-		// jQuery('<img zindex="3" />').attr('src', "public/images/japan01.jpg");
-		// jQuery('<img zindex="2" />').attr('src', "public/images/japan02.jpg");
-		//         jQuery('<img zindex="1" />').attr('src', "public/images/japan03.jpg");
+		jQuery('<img />').attr('src', "public/images/001.jpg");
+		jQuery('<img />').attr('src', "public/images/002.jpg");
+		jQuery('<img />').attr('src', "public/images/003.jpg");
+		jQuery('<img />').attr('src', "public/images/004.jpg");
+		jQuery('<img />').attr('src', "public/images/005.jpg");
+		jQuery('<img />').attr('src', "public/images/006.jpg");
+		jQuery('<img />').attr('src', "public/images/007.jpg");
+		jQuery('<img />').attr('src', "public/images/008.jpg");
+		jQuery('<img />').attr('src', "public/images/009.jpg");
+		jQuery('<img />').attr('src', "public/images/010.jpg");
+		jQuery('<img />').attr('src', "public/images/011.jpg");
+		jQuery('<img />').attr('src', "public/images/012.jpg");
+		jQuery('<img />').attr('src', "public/images/013.jpg");
+		jQuery('<img />').attr('src', "public/images/014.jpg");
+		jQuery('<img />').attr('src', "public/images/015.jpg");
+		jQuery('<img />').attr('src', "public/images/016.jpg");
+		jQuery('<img />').attr('src', "public/images/017.jpg");
+		jQuery('<img />').attr('src', "public/images/018.jpg");
+		jQuery('<img />').attr('src', "public/images/019.jpg");
+		jQuery('<img />').attr('src', "public/images/020.jpg");
+		jQuery('<img />').attr('src', "public/images/021.jpg");
+		jQuery('<img />').attr('src', "public/images/022.jpg");
+		jQuery('<img />').attr('src', "public/images/023.jpg");
+		jQuery('<img />').attr('src', "public/images/024.jpg");
+		jQuery('<img />').attr('src', "public/images/025.jpg");
+		jQuery('<img />').attr('src', "public/images/026.jpg");
+		jQuery('<img />').attr('src', "public/images/027.jpg");
+		jQuery('<img />').attr('src', "public/images/028.jpg");
+		jQuery('<img />').attr('src', "public/images/029.jpg");
+		jQuery('<img />').attr('src', "public/images/030.jpg");
+		jQuery('<img />').attr('src', "public/images/031.jpg");
+		jQuery('<img />').attr('src', "public/images/032.jpg");
+		jQuery('<img />').attr('src', "public/images/033.jpg");
+		jQuery('<img />').attr('src', "public/images/034.jpg");
+		jQuery('<img />').attr('src', "public/images/035.jpg");
+		jQuery('<img />').attr('src', "public/images/036.jpg");
+		jQuery('<img />').attr('src', "public/images/037.jpg");
+		jQuery('<img />').attr('src', "public/images/038.jpg");
+		jQuery('<img />').attr('src', "public/images/039.jpg");
+		jQuery('<img />').attr('src', "public/images/040.jpg");
+		jQuery('<img />').attr('src', "public/images/041.jpg");
+		jQuery('<img />').attr('src', "public/images/042.jpg");
+		jQuery('<img />').attr('src', "public/images/043.jpg");
+		jQuery('<img />').attr('src', "public/images/044.jpg");
+		jQuery('<img />').attr('src', "public/images/045.jpg");
+		jQuery('<img />').attr('src', "public/images/046.jpg");
+		jQuery('<img />').attr('src', "public/images/047.jpg");
+		jQuery('<img />').attr('src', "public/images/048.jpg");
+		jQuery('<img />').attr('src', "public/images/049.jpg");
+		jQuery('<img />').attr('src', "public/images/050.jpg");
+		jQuery('<img />').attr('src', "public/images/051.jpg");
+		jQuery('<img />').attr('src', "public/images/052.jpg");
+		jQuery('<img />').attr('src', "public/images/053.jpg");
+		jQuery('<img />').attr('src', "public/images/054.jpg");
+		jQuery('<img />').attr('src', "public/images/055.jpg");
+		jQuery('<img />').attr('src', "public/images/056.jpg");
+		jQuery('<img />').attr('src', "public/images/057.jpg");
+		jQuery('<img />').attr('src', "public/images/058.jpg");
+		jQuery('<img />').attr('src', "public/images/059.jpg");
+		jQuery('<img />').attr('src', "public/images/060.jpg");
+		jQuery('<img />').attr('src', "public/images/061.jpg");
+		jQuery('<img />').attr('src', "public/images/062.jpg");
+		jQuery('<img />').attr('src', "public/images/063.jpg");
+		jQuery('<img />').attr('src', "public/images/064.jpg");
+		jQuery('<img />').attr('src', "public/images/065.jpg");
+		jQuery('<img />').attr('src', "public/images/066.jpg");
+		jQuery('<img />').attr('src', "public/images/067.jpg");
+		jQuery('<img />').attr('src', "public/images/068.jpg");
+		jQuery('<img />').attr('src', "public/images/069.jpg");
+		jQuery('<img />').attr('src', "public/images/070.jpg");
       });
     </script>
   </head>
@@ -29,17 +96,23 @@
       img.bgmaximage {position:fixed !important;}
     </style>
 	<div class="exec_js" id="test_which"> 
-      <input type="textarea" />
+      <input type="text" size="279" />
 	</div> 
 	<script type="text/javascript">
 	$(function(){
 	    $("#test_which").bind("keydown", function(event) {
-		    if($("img").attr("src") == "public/images/youtubesnips-video.mp4_000129863.jpg") {
-		    			    alt = 0
-		    			    src = "public/images/youtubesnips-video.mp4_000033767.jpg"
+		    if($("img").attr("src") == "public/images/178.jpg") {
+		    			    alt = 0;
+		    			    src = "public/images/001.jpg";
 		    } else {
-		    			    alt = parseInt($("img").attr("alt")) + 1001
-		    			    src = "public/images/youtubesnips-video.mp4_0000" + (parseInt(33767) + parseInt(alt)) + ".jpg"
+		    			    alt = parseInt($("img").attr("alt")) + 1;
+		                    if(alt < 10) {
+			    			    src = "public/images/00" + alt + ".jpg";
+			                } else if(alt < 100) {
+			    			    src = "public/images/0" + alt + ".jpg";
+				            } else {
+			    			    src = "public/images/" + alt + ".jpg";
+              				}
 		    }
 		    $("img").attr("src", src);
 		    $("img").attr("alt", alt);
@@ -60,7 +133,7 @@
 	</script>
 	<!-- <img src="public/images/japan.jpg" class="bgmaximage" /> -->
 	<!-- <img src="public/images/japan01.jpg" height="100%" alt="0" /> -->
-	<img src="public/images/youtubesnips-video.mp4_000033767.jpg" class="bgmaximage" alt="0" />
+	<img src="public/images/001.jpg" class="bgmaximage" alt="0" />
 	<!-- <img src="public/images/japan01.jpg" height="100%" zindex="3" />
 	<img src="public/images/japan01.jpg" height="100%" zindex="2" />
 	<img src="public/images/japan01.jpg" height="100%" zindex="1" /> -->
