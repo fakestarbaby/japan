@@ -18,6 +18,9 @@
         if(jQuery.support.checkOn && jQuery.support.noCloneEvent){
           $("*").css("cursor", "none");
         };
+		// jQuery('<img zindex="3" />').attr('src', "public/images/japan01.jpg");
+		// jQuery('<img zindex="2" />').attr('src', "public/images/japan02.jpg");
+		//         jQuery('<img zindex="1" />').attr('src', "public/images/japan03.jpg");
       });
     </script>
   </head>
@@ -25,7 +28,43 @@
     <style>
       img.bgmaximage {position:fixed !important;}
     </style>
-    <img src="public/images/japan.jpg" class="bgmaximage" />
+	<div class="exec_js" id="test_which"> 
+      <input type="textarea" />
+	</div> 
+	<script type="text/javascript">
+	$(function(){
+	    $("#test_which").bind("keydown", function(event) {
+		    if($("img").attr("src") == "public/images/youtubesnips-video.mp4_000129863.jpg") {
+		    			    alt = 0
+		    			    src = "public/images/youtubesnips-video.mp4_000033767.jpg"
+		    } else {
+		    			    alt = parseInt($("img").attr("alt")) + 1001
+		    			    src = "public/images/youtubesnips-video.mp4_0000" + (parseInt(33767) + parseInt(alt)) + ".jpg"
+		    }
+		    $("img").attr("src", src);
+		    $("img").attr("alt", alt);
+		    
+		// 　　　　$("img").css("margin-left", parseInt($("img").css("margin-left")) - 1);
+		    // rand = Math.floor(Math.random() * 4 + 1);
+     		// alert($("img").attr("src"));
+// if($("img").attr("src") == "public/images/youtubesnips-video.mp4_000129863.jpg") {
+//   src = "public/images/youtubesnips-video.mp4_000033767.jpg";
+// } else {
+//   src = "public/images/youtubesnips-video.mp4_0000" + "33767" + ".jpg";
+// }
+// 		    // mg = parseInt($("img").css("margin-left")) + 2;
+// $("img").attr("src", src);
+	        // $(".log", this).prepend("<br/>event.type: " + event.type + "　event.which: " + event.which);
+	    });
+	});
+	</script>
+	<!-- <img src="public/images/japan.jpg" class="bgmaximage" /> -->
+	<!-- <img src="public/images/japan01.jpg" height="100%" alt="0" /> -->
+	<img src="public/images/youtubesnips-video.mp4_000033767.jpg" class="bgmaximage" alt="0" />
+	<!-- <img src="public/images/japan01.jpg" height="100%" zindex="3" />
+	<img src="public/images/japan01.jpg" height="100%" zindex="2" />
+	<img src="public/images/japan01.jpg" height="100%" zindex="1" /> -->
+
     <embed src="public/musics/furin.mp3" hidden="true" autostart="true" loop="true" volume="100">
   </body>
 </html>
