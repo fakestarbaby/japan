@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Feel Japan!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="http://code.jquery.com/jquery-1.5.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="javascripts/jquery.maximage.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+      $(function(){
+        jQuery('img.bgmaximage').maxImage({
+          isBackground: true,
+          overflow: 'auto'
+        });
+        if(!jQuery.support.checkOn){
+          $("*").css("cursor", "url(images/blank.gif), default");
+        };
+        if(jQuery.support.checkOn && jQuery.support.noCloneEvent){
+          $("*").css("cursor", "none");
+        };
+		jQuery('<img />').attr('src', "images/001.png");
+		jQuery('<img />').attr('src', "images/002.png");
+		jQuery('<img />').attr('src', "images/003.png");
+		jQuery('<img />').attr('src', "images/004.png");
+		jQuery('<img />').attr('src', "images/005.png");
+		jQuery('<img />').attr('src', "images/006.png");
+		jQuery('<img />').attr('src', "images/007.png");
+		jQuery('<img />').attr('src', "images/008.png");
+		jQuery('<img />').attr('src', "images/009.png");
+		jQuery('<img />').attr('src', "images/010.png");
+		jQuery('<img />').attr('src', "images/011.png");
+		jQuery('<img />').attr('src', "images/012.png");
+		jQuery('<img />').attr('src', "images/013.png");
+		jQuery('<img />').attr('src', "images/014.png");
+		jQuery('<img />').attr('src', "images/015.png");
+		jQuery('<img />').attr('src', "images/016.png");
+		jQuery('<img />').attr('src', "images/017.png");
+		jQuery('<img />').attr('src', "images/018.png");
+		jQuery('<img />').attr('src', "images/019.png");
+		jQuery('<img />').attr('src', "images/020.png");
+		jQuery('<img />').attr('src', "images/021.png");
+		jQuery('<img />').attr('src', "images/022.png");
+		jQuery('<img />').attr('src', "images/023.png");
+		jQuery('<img />').attr('src', "images/024.png");
+		jQuery('<img />').attr('src', "images/025.png");
+		jQuery('<img />').attr('src', "images/026.png");
+		jQuery('<img />').attr('src', "images/027.png");
+		jQuery('<img />').attr('src', "images/028.png");
+		jQuery('<img />').attr('src', "images/029.png");
+		jQuery('<img />').attr('src', "images/030.png");
+		jQuery('<img />').attr('src', "images/031.png");
+		jQuery('<img />').attr('src', "images/032.png");
+		jQuery('<img />').attr('src', "images/033.png");
+		jQuery('<img />').attr('src', "images/034.png");
+		jQuery('<img />').attr('src', "images/035.png");
+		jQuery('<img />').attr('src', "images/036.png");
+		jQuery('<img />').attr('src', "images/037.png");
+		jQuery('<img />').attr('src', "images/038.png");
+		jQuery('<img />').attr('src', "images/039.png");
+		jQuery('<img />').attr('src', "images/040.png");
+		jQuery('<img />').attr('src', "images/041.png");
+		jQuery('<img />').attr('src', "images/042.png");
+		jQuery('<img />').attr('src', "images/043.png");
+		jQuery('<img />').attr('src', "images/044.png");
+		jQuery('<img />').attr('src', "images/045.png");
+		jQuery('<img />').attr('src', "images/046.png");
+		jQuery('<img />').attr('src', "images/047.png");
+		jQuery('<img />').attr('src', "images/048.png");
+		jQuery('<img />').attr('src', "images/049.png");
+		jQuery('<img />').attr('src', "images/050.png");
+		jQuery('<img />').attr('src', "images/051.png");
+		jQuery('<img />').attr('src', "images/052.png");
+		jQuery('<img />').attr('src', "images/053.png");
+		jQuery('<img />').attr('src', "images/054.png");
+		jQuery('<img />').attr('src', "images/055.png");
+		jQuery('<img />').attr('src', "images/056.png");
+		jQuery('<img />').attr('src', "images/057.png");
+		jQuery('<img />').attr('src', "images/058.png");
+		jQuery('<img />').attr('src', "images/059.png");
+		jQuery('<img />').attr('src', "images/060.png");
+		jQuery('<img />').attr('src', "images/061.png");
+		jQuery('<img />').attr('src', "images/062.png");
+		jQuery('<img />').attr('src', "images/063.png");
+		jQuery('<img />').attr('src', "images/064.png");
+		jQuery('<img />').attr('src', "images/065.png");
+		jQuery('<img />').attr('src', "images/066.png");
+		jQuery('<img />').attr('src', "images/067.png");
+		jQuery('<img />').attr('src', "images/068.png");
+		jQuery('<img />').attr('src', "images/069.png");
+		jQuery('<img />').attr('src', "images/070.png");
+      });
+    </script>
+  </head>
+  <body>
+    <style>
+	textarea {
+	  color: white;
+	  background: transparent;
+	  border: 0;
+	  outline: thin dotted blue;
+	}
+	img.bgmaximage {position:fixed !important;}
+    </style>
+	<div class="exec_js" id="test_which">
+      <!-- <input type="text" size="279" /> -->
+  　　　　<textarea id="test_which" rows="55" cols="200"></textarea>
+	</div>
+	<script type="text/javascript">
+	$(function(){
+	    $("#test_which").bind("keydown", function(event) {
+		    if($("img").attr("src") == "images/427.png") {
+		    			    alt = 0;
+		    			    src = "images/001.png";
+		    } else {
+		    			    alt = parseInt($("img").attr("alt")) + 1;
+		                    if(alt < 10) {
+			    			    src = "images/00" + alt + ".png";
+			                } else if(alt < 100) {
+			    			    src = "images/0" + alt + ".png";
+				            } else {
+			    			    src = "images/" + alt + ".png";
+              				}
+		    }
+		    $("img").attr("src", src);
+		    $("img").attr("alt", alt);
+		    
+		// 　　　　$("img").css("margin-left", parseInt($("img").css("margin-left")) - 1);
+		    // rand = Math.floor(Math.random() * 4 + 1);
+     		// alert($("img").attr("src"));
+// if($("img").attr("src") == "public/images/youtubesnips-video.mp4_000129863.png") {
+//   src = "public/images/youtubesnips-video.mp4_000033767.png";
+// } else {
+//   src = "public/images/youtubesnips-video.mp4_0000" + "33767" + ".png";
+// }
+// 		    // mg = parseInt($("img").css("margin-left")) + 2;
+// $("img").attr("src", src);
+	        // $(".log", this).prepend("<br/>event.type: " + event.type + "　event.which: " + event.which);
+	    });
+	});
+	</script>
+	<!-- <img src="public/images/japan.png" class="bgmaximage" /> -->
+	<!-- <img src="public/images/japan01.png" height="100%" alt="0" /> -->
+	<img src="images/001.png" class="bgmaximage" alt="0" />
+	<!-- <img src="public/images/japan01.png" height="100%" zindex="3" />
+	<img src="public/images/japan01.png" height="100%" zindex="2" />
+	<img src="public/images/japan01.png" height="100%" zindex="1" /> -->
+
+    <embed src="musics/sea.mp3" hidden="true" autostart="true" loop="true" volume="100">
+  </body>
+</html>
