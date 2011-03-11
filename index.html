@@ -12,6 +12,12 @@
           isBackground: true,
           overflow: 'auto'
         });
+        if(!jQuery.support.checkOn){
+          $("*").css("cursor", "url(public/images/blank.gif), default");
+        };
+        if(jQuery.support.checkOn && jQuery.support.noCloneEvent){
+          $("*").css("cursor", "none");
+        };
       });
     </script>
   </head>
