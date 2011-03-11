@@ -4,7 +4,21 @@
     <meta charset="utf-8">
     <title>Feel Japan!</title>
     <link rel="stylesheet" href="style.css">
+    <script src="http://code.jquery.com/jquery-1.5.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="public/js/jquery.maximage.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+      $(function(){
+        jQuery('img.bgmaximage').maxImage({
+          isBackground: true,
+          overflow: 'auto'
+        });
+      });
+    </script>
   </head>
   <body>
+    <style>
+      img.bgmaximage {position:fixed !important;}
+    </style>
+    <img src="public/images/japan.jpg" class="bgmaximage" />
   </body>
 </html>
